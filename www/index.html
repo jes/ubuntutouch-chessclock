@@ -50,6 +50,10 @@
                 flex: flex-grow;
                 margin-left: 50px;
                 margin-right: 50px;
+                color: #212529;
+                background-color: transparent;
+                border: 1px solid transparent;
+                padding: .375rem .75rem;
             }
 
             .vertical-stack {
@@ -72,9 +76,9 @@
                     5:00
                 </div>
                 <div id="controls">
-                    <button id="pause">▮▮</button>
-                    <button id="reset">↻</button>
-                    <button id="edit">⚙</button>
+                    <button class="btn btn-default" id="pause">▮▮</button>
+                    <button class="btn btn-default" id="reset">↻</button>
+                    <button class="btn btn-default" id="edit">⚙</button>
                 </div>
                 <div id="clock2" class="clock">
                     5:00
@@ -87,8 +91,8 @@
                 <br><br>
                 Time: <input type="number" id="mins" value="5" style="width: 3em"> mins <input type="number" id="secs" value="0" style="width: 3em"> secs<br><br>
                 Increment: <input type="number" id="incsecs" value="5" style="width: 3em"> secs<br><br>
-                <button id="save-settings">OK</button>
-                <button id="cancel-settings">Cancel</button>
+                <button class="btn btn-primary" id="save-settings">OK</button>
+                <button class="btn btn-default" id="cancel-settings">Cancel</button>
             </div>
         </div>
 
