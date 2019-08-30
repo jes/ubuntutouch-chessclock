@@ -1,0 +1,15 @@
+{
+    "name": "chessclock.jamesstanley",
+    "description": "A chess clock that doesn't put the screen in landscape mode",
+    "architecture": "all",
+    "title": "Chess Clock",
+    "hooks": {
+        "chessclock": {
+            "apparmor": "chessclock.apparmor",
+            "desktop":  "chessclock.desktop"
+        }
+    },
+    "version": "1.0.0",
+    "maintainer": "James Stanley <james@incoherency.co.uk>",
+    "framework" : "ubuntu-sdk-16.04"
+}

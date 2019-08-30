@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chess Clock</title>
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+        <link rel="stylesheet" type="text/css" href="assets/modal.css">
+
+        <style type="text/css">
+            html, body {
+                width:100%;
+                height:100%;
+                margin: 0;
+                padding: 0;
+                font-family: sans-serif;
+            }
+            .clock {
+                flex-grow: 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid black;
+                border-radius: 5px;
+                background-color: #aaa;
+                margin: 2px;
+                font-size: 4em;
+            }
+            .upsidedown {
+                -moz-transform: rotate(-180deg);
+                -o-transform: rotate(-180deg);
+                -webkit-transform: rotate(-180deg);
+            }
+            .active {
+                background-color: #eee;
+            }
+            #clock {
+                height: 100%;
+            }
+            #controls {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                width: 100%;
+            }
+            #controls button {
+                font-size: 2.5em;
+                flex-grow: 1;
+                flex: flex-grow;
+                margin-left: 50px;
+                margin-right: 50px;
+            }
+
+            .vertical-stack {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            #settings input {
+                font-size: 1.5em;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="clock">
+            <div class="vertical-stack">
+                <div id="clock1" class="upsidedown clock">
+                    5:00
+                </div>
+                <div id="controls">
+                    <button id="pause">▮▮</button>
+                    <button id="reset">↻</button>
+                    <button id="edit">⚙</button>
+                </div>
+                <div id="clock2" class="clock">
+                    5:00
+                </div>
+            </div>
+        </div>
+        <div id="settings" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <br><br>
+                Time: <input type="number" id="mins" value="5" style="width: 3em"> mins <input type="number" id="secs" value="0" style="width: 3em"> secs<br><br>
+                Increment: <input type="number" id="incsecs" value="5" style="width: 3em"> secs<br><br>
+                <button id="save-settings">OK</button>
+                <button id="cancel-settings">Cancel</button>
+            </div>
+        </div>
+
+        <script src="assets/jquery-3.4.1.min.js"></script>
+        <script src="assets/chess-clock.js"></script>
+        <script src="assets/modal.js"></script>
+    </body>
+</html>
