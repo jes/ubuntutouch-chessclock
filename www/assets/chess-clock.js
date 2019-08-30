@@ -55,7 +55,7 @@ $('#reset').click(function() {
 });
 
 $('#edit').click(function() {
-    $('#mins').val(startms / 60000);
+    $('#mins').val(Math.floor(startms / 60000));
     $('#secs').val((startms%60000)/1000);
     $('#incsecs').val(incrementms/1000);
     $('#settings').css('display','block');
