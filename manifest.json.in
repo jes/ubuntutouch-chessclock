@@ -1,7 +1,7 @@
 {
     "name": "chessclock.jamesstanley",
-    "description": "A chess clock that doesn't put the screen in landscape mode",
-    "architecture": "all",
+    "description": "A chess clock that doesn't put the screen in landscape mode.",
+    "architecture": "@CLICK_ARCH@",
     "title": "Chess Clock",
     "hooks": {
         "chessclock": {

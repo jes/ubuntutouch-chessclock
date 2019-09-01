@@ -1,6 +1,6 @@
 [Desktop Entry]
-Name=Chess Clock
-Exec=webapp-container --app-id="chessclock.jamesstanley" $@ www/index.html
+_Name=Chess Clock
+Exec=qmlscene --scaling qml/Main.qml
 Icon=www/assets/logo.svg
 Terminal=false
 Type=Application
